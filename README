@@ -1,0 +1,13 @@
+This is a course project which tries to replicate the results of the paper ``Automatic decision of piano fingering based on hidden Markov models'' by Yuichiro Yonebayashi, et al, published on IJCAI 2007.
+
+We took a guess on the way the first probability term, P(y_i | (f_i, f_{i-1})) on Formula 2 in this paper is computed. As a result this gives us 5 new parameters which are the Y position of the contact points of the fingers.
+
+This is made to the best of my understanding of the paper and may not perfectly reflect the authors' ideas.
+
+Usage:
+1. run the script to perform training.
+	$ python Test.py
+2. visualize the training log.
+	$ R
+	> source("VisTraining.R")
+	> show(g12)
