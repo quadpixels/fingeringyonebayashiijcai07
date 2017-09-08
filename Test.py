@@ -1,8 +1,15 @@
 # -*- coding: utf-8 -*-
+#
+# To 1P3A Warald --- why this code is chosen
+#
+# This code replicates the Piano Fingering paper by Yonebayashi et al.
+# It shows my thinking process of dissecting and reverse-engineering a machine learning algorithm presented in this paper.
+# Specifically, it involves number crunching and numerical recipes (such as the calculation of ERFCs).
+# The code itself contains training and inference of an HMM model, consisting a full machine learning iteration.
+#
 
 import scipy, math, scipy.integrate, sys, random, Queue, threading
 
-# How about training the model ...... ?
 # 2015-04-22 First step: Print the estimation E[ln(P(Y|h))] for 
 #    two diffferent fingering schemes of the same piece
 # 2015-04-23 Used Gradient Descent and found the transition probabilities and Y positions
